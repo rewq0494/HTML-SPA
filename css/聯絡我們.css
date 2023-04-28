@@ -1,0 +1,59 @@
+/* 設定網頁的背景顏色、字型和 margin */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* 包含表單的容器，設定寬度、置中、padding */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 設定標題的置中和下方間距 */
+h3 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* 設定表單的背景顏色、padding、圓角和陰影 */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 設定輸入框和文字區域的樣式，包括寬度、padding、下方間距、邊框、圓角和字體大小 */
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* 設定文字區域的高度 */
+textarea {
+    height: 150px;
+}
+
+/* 設定送出按鈕的背景顏色、文字顏色、邊框、圓角、padding、字體大小和滑鼠樣式 */
+input[type="submit"] {
+    background-color: #7fa7f1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 滑鼠移過去時，更改送出按鈕的背景顏色 */
+input[type="submit"]:hover {
+    background-color: #5685e3;
+}

@@ -1,0 +1,54 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.room-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+
+}
+
+.room-images img {
+    display: block;
+    margin: auto;
+    width: 450px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    text-align: center;
+    /* 置中對齊 */
+    font-size: 2em;
+    /* 設定字體大小 */
+    text-shadow: 1px 1px 1px #ccc;
+    /* 設定文字陰影效果 */
+    margin-bottom: 20px;
+    /* 設定上下元素間距為 10px */
+}
+
+.room-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.room-info p {
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #ccc;
+    /* 設定文字的陰影效果，向右下方偏移 1px，且陰影大小為 1px */
+    margin-bottom: 10px;
+    /*  設定最大寬度為 55 個中文字寬度，超過時會自動換行 */
+    max-width: 55ch;
+
+
+}

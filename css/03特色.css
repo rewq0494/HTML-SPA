@@ -1,0 +1,62 @@
+.content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+}
+
+.a02,
+.a03,
+.a04,
+.a05,
+.a06 {
+    border-radius: 10px;
+    /*設定元素的圓角半徑為 10 個像素 */
+    overflow: hidden;
+    /*設定元素的溢出部分不顯示 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*陰影效果 */
+    transition: transform 0.3s ease-in-out;
+    /*設定元素的過渡效果，當元素的屬性變化時會有平滑的過渡效果 */
+    max-height: 100%;
+}
+
+.a02:hover,
+.a03:hover,
+.a04:hover,
+.a05:hover,
+.a06:hover {
+    transform: translateY(-5px);
+    /*沿著 y 軸負方向移動 5 個像素的距離 */
+}
+
+.a02 img,
+.a03 img,
+.a04 img,
+.a05 img,
+.a06 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.a02 p,
+.a03 p,
+.a04 p,
+.a05 p,
+.a06 p {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}

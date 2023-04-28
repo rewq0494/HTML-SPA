@@ -1,0 +1,242 @@
+/* 字體 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+/* 全局樣式 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif !important;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 頁首 */
+
+.shell-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    /* padding: 10px 32px; */
+    height: 80px;
+    border-bottom-style: double
+}
+
+.shell-top a img {
+    width: 210px;
+    height: auto;
+    float: left;
+}
+
+
+.shell-top nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* .shell-top nav ul li {
+    margin-right: 50px;
+} */
+
+
+
+.shell-top nav ul li {
+    margin-right: 50px;
+}
+
+.shell-top nav ul li:last-child {
+    margin-right: 0;
+}
+
+.shell-top nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shell-top nav a:hover {
+    color: #007aff;
+}
+
+.top {
+    display: flex;
+}
+
+/* 影片 */
+.shell-main {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* 主要內容區 */
+h1 {
+    font-family: "Arial", sans-serif;
+}
+
+
+
+.intro,
+.features,
+.rooms,
+.transport,
+.reservation {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+.intro h2,
+.features h2,
+.rooms h2,
+.transport h2,
+.reservation h2 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.features ul,
+.rooms ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features li,
+.rooms li {
+    width: calc(33.3333% - 8px);
+    background-color: #f5f5f5;
+    margin-bottom: 16px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features li:hover,
+.rooms li:hover {
+    background-color: #007aff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.transport p,
+.reservation p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* 最新資訊 */
+.latest-news {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin-left: 32px;
+    flex: 1;
+}
+
+.latest-news h2 {
+    font-size: 1.5em;
+    color: #333;
+    background-color: #E0E0E0;
+    padding: 10px;
+    border: 1px solid #DDD;
+    margin-bottom: 20px;
+    flex-grow: 0;
+}
+
+.latest-news p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+.latest-news li:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.latest-news ul {
+    list-style: none;
+}
+
+.latest-news li {
+    text-align: left;
+    padding: 10px;
+}
+
+/* 影片及背景合併 */
+
+.tttop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 32px;
+}
+
+/* 圖片輪轉介紹 */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.text {
+    text-align: center;
+}
+
+
+
+/* 頁尾 */
+
+.shell-footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shell-footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.shell-footer a {
+    color: #007aff;
+    text-decoration: none;
+}
+
+.shell-footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+/* 頁面整體樣式設定 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 圖片置中且添加圓角效果 */
+.new_img img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* 新聞內容樣式設定 */
+.new_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 調整內文文字樣式 */
+.new_intro {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 調整標題樣式 */
+.new_content h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 調整段落樣式 */
+.new_content p {
+    margin-bottom: 30px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    letter-spacing: 5px;
+    line-height: 1.8;
+}

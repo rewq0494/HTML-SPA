@@ -1,0 +1,45 @@
+.imgtop {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* 讓圖片水平置中 */
+}
+
+.carousel-item img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 90%;
+    margin: auto;
+
+}
+
+/* 設定文字區塊的樣式 */
+.shell-main {
+    text-align: center;
+    /* 水平置中 */
+
+}
+
+/* 設定文字的樣式 */
+
+.intro h5 {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 1rem;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 2.5;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    /* 設置每行最大的字符數，這裡假設是20 */
+    max-width: 65ch;
+    position: relative;
+    top: 1rem;
+
+}
+
+/* div.godown {
+    padding: 50px;
+} */

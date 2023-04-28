@@ -1,0 +1,47 @@
+[
+    {
+        "房名": "水明",
+        "房型": "雙人房",
+        "特色": "樓中樓的絕美設計，雖為積層堆疊的建築，卻呈現了Villa的度假空間感。\n客廳區由地面延伸至天花板的大片落地窗，另外設置了賞月露台，讓人得以悠閒地放鬆",
+        "圖片": "https://www.dittou.com/wp-content/uploads/2015/07/%E3%80%90%E8%99%B9%E5%A4%95%E8%AB%BE%E9%9B%85-%E8%B0%B7%E9%97%9C%E3%80%91%E5%AE%A2%E6%88%BF%EF%BC%88%E6%B0%B4%E6%98%8E%EF%BC%892-768x512.jpg",
+        "圖片2": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E8%99%B9%E5%A4%95%E8%AB%BE%E9%9B%85-%E8%B0%B7%E9%97%9C-hoshinoya-guguan-%E5%AE%A2%E6%88%BF%E5%8D%8A%E9%9C%B2%E5%A4%A9%E6%BA%AB%E6%B3%89%E6%9C%88%E8%A6%8B-yue-guest-room-onsen-1632736820.jpg",
+        "圖片3": "https://img.fun-life.com.tw/Taichung-stay/hoshinoya-guguan/7.jpg",
+        "價格": 7000
+    },
+    {
+        "房名": "山霞",
+        "房型": "雙人房",
+        "特色": "度假村內唯一不是樓中樓設計的溫泉客房，適合親子旅遊以及不便的年長者，房間包含了兩間臥室，以及明亮開放的和式地板客廳、開闊的景觀露台",
+        "圖片": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2019-05-15-%E4%B8%8B%E5%8D%882-36-52-1557902231.png?crop=1xw:1xh;center,top&resize=980:*",
+        "圖片2": "https://rolisa-tour.com.tw/timthumb.php?src=upload/0801zocn9.jpg&zc=1&q=90.jpg",
+        "圖片3": "https://i0.wp.com/nian.blog/wp-content/uploads/2022/09/DSC09928.jpeg?resize=1024%2C685&ssl=1",
+        "價格": 8000
+    },
+    {
+        "房名": "月見",
+        "房型": "特別房型",
+        "特色": "為樓中樓式的設計，一層為可供用餐的客廳區及觀景月見露台，另一層則是特大的泡湯區，相較其他房型，「月見」客房的溫泉專用區是普通的兩倍寬敞，最適合愛泡湯的旅客選擇！",
+        "圖片": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2019-05-15-%E4%B8%8B%E5%8D%882-35-01-1557902128.png?crop=1xw:1xh;center,top&resize=980:*",
+        "圖片2": "https://bitesize.tw/wp-content/uploads/20200304165235_66.jpg",
+        "圖片3": "https://bitesize.tw/wp-content/uploads/20200304164802_44.jpg",
+        "價格": 12000
+    },
+    {
+        "房名": "風音",
+        "房型": "三人房",
+        "特色": "擁有超大的和室客廳，能夠在此用餐、談天，享受與旅伴們的歡樂時光 ，陽台設有寬敞的座椅，能夠盡情眺望迷人的山巒景色",
+        "圖片": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E8%99%B9%E5%A4%95%E8%AB%BE%E9%9B%85-%E8%B0%B7%E9%97%9C-%E5%AE%A2%E6%88%BF-%E9%A2%A8%E9%9F%B3-3-1632736562.jpg",
+        "圖片2": "https://media-cdn.tripadvisor.com/media/photo-m/1280/19/4c/e5/0f/caption.jpg",
+        "圖片3": "https://cdn2.ettoday.net/images/4196/e4196198.jpg",
+        "價格": 16000
+    },
+    {
+        "房名": "森羅",
+        "房型": "六人房",
+        "特色": "佔了約216平方公尺的超大空間， 設有溫泉專用樓層的樓中樓客房及三間臥室；每間臥室各自獨立、保有充分的隱私空間",
+        "圖片": "https://cdn.bella.tw/files/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-07-16%2018_16_58.png",
+        "圖片2": "https://www.luxurywatcher.com/uploads/article/2/8/28035/1580890107245.jpg",
+        "圖片3": "https://www.luxurywatcher.com/uploads/article/2/8/28035/1580890107244.jpg",
+        "價格": 27000
+    }
+]

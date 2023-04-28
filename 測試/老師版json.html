@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="json.js"></script>
+<!-- 把外面的js檔案較進來 -->
+<script>
+
+    Object.prototype.color = function () {
+        // 因為已經json解析，變成陣列(Object)，所以可以用大Object來寫
+        // 改原檔，擴充新功能
+        // 在每個物件裡加入顏色的函數color
+        let iAQI = parseInt(this.aqi)
+        // this 的意思是誰呼叫它就是它
+        //匈牙利名命名法 iAQI
+        if (iAQI < 50) {
+            return 'green'
+        } else {
+            return 'orange'
+        }
+    }
+    //原型
+
+    Object.prototype.geoLocation = function (location) {
+        // 擴充geoLocation 
+        let lon = parseFloat(this.longitude)
+        let lat = parseFloat(this.latitude)
+
+        return location(lon, lat)
+    }
+    //原型
+
+
+    function f(jsonObj) {
+        // let jsonObj = JSON.parse(json)
+        // 把字串轉成陣列，這個轉換過程叫做json解析
+
+        let table_header = `
+   <table border="1">
+      <tr>
+          <th>${getFieldName(jsonObj['fields'], 'county')}</th>
+          <th>${getFieldName(jsonObj['fields'], 'sitename')}</th>
+          <th>${getFieldName(jsonObj['fields'], 'aqi')}</th>
+          <th>${getFieldName(jsonObj['fields'], 'status')}</th>
+          <th>${getFieldName(jsonObj['fields'], 'longitude')}</th>
+          <th>${getFieldName(jsonObj['fields'], 'latitude')}</th>
+      </tr>
+   `
+        // backtick 可以表示字串，空格可以完全表示出來
+
+        let content = ''
+        jsonObj['records'].forEach(function (record) {
+            record.geoLocation(function (lon, lat) {
+                content += `
+          <tr style="background-color: ${record.color()}">
+              <td>${record['county']}</td>
+              <td>${record['sitename']}</td>
+              <td>${record['aqi']}</td>
+              <td>${record['status']}</td>
+              <td>${lon}</td>
+              <td>${lat}</td>
+          </tr>
+      `
+            })
+        })
+
+        let table_footer = '</table>'
+        let table = table_header + content + table_footer
+        // 表投+表身+表尾
+        return table
+    }
+
+
+    // document.getElementById('data').innerHTML = table
+    window.onload = function () {
+        fetch('https://raw.githubusercontent.com/kirkchu/mongodb/main/aqiv2.json')
+            // 可能有同源政策問題(CORS)(不行每個來源來自不同網站)，但是老師是用girhub(開源)影響直接抓json進來或是可以用後端來抓，就沒有這個問題
+            .then(function (response) {
+                // 取的Promise的物件內容
+                return response.json()
+                // 不是文字、json 一律用blob
+                // json解析完得資料
+                // return response.text()
+            })
+            .then(function (obj) {
+                let table = f(obj)
+                document.getElementById('data').innerHTML = table
+            })
+    }
+// 使用AJAS新的語法，可以同步網路上的資料
+
+
+
+// // 陣列裡面字典
+// // 字典型態 key-value格式
+// let key = 'birthday'
+// document.write(obj.name)
+// document.write(obj[key])
+// // 非數字型態的索引陣列
+// // 有兩種寫法
+</script>
+
+<body>
+    <div id="data"></div>
+</body>
+
+</html>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>天山水-聯絡我們</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/子結構.css">
+    <link rel="stylesheet" href="/css/我要訂房.css">
+    <link rel="stylesheet" href="./css/聯絡我們.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="shell-top">
+        <a>
+            <img src="./影片圖片/logo.png" alt="天山水">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./01主頁.html">首頁</a></li>
+                <li><a href="./02關於我們.html">關於我們</a></li>
+                <li><a href="./03特色.html">特色</a></li>
+                <li><a href="./04房型.html">房型</a></li>
+                <li><a href="./05交通.html">交通</a></li>
+            </ul>
+        </nav>
+        <button class="cta">
+            <a href="https://www.agoda.com/" target="_blank">
+                <span class="hover-underline-animation"> 立即預定 </span>
+                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                    id="arrow-horizontal">
+                    <path transform="translate(30)"
+                        d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                        id="Path_10"></path>
+                </svg>
+            </a>
+        </button>
+    </header>
+    <div class="container">
+        <h3>聯絡我們</h3>
+        <form onsubmit="submitForm(event)">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" required />
+
+            <label for="phone">聯絡電話：</label>
+            <input type="tel" id="phone" name="phone" placeholder="請輸入聯絡電話" required />
+
+            <label for="email">聯絡信箱：</label>
+            <input type="email" id="email" name="email" placeholder="請輸入聯絡信箱" required />
+
+            <label for="content">內容：</label>
+            <textarea id="content" name="content" placeholder="請輸入內容" required></textarea>
+
+            <input type="submit" value="確認送出" />
+        </form>
+    </div>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // 防止表單自動提交
+
+            // 顯示提示框
+            if (confirm('請確認是否送出')) {
+                // 如果使用者按下了確認按鈕，就跳回主頁
+                window.location.href = '/01主頁.html';
+            }
+        }
+    </script>
+    <footer>
+        <!-- <div class="footer-logo">
+            <img src="./影片圖片/logo01.png" alt="Logo" />
+        </div> -->
+        <div class="link">
+            <a href="https://www.instagram.com/explore/tags/%E6%BA%AB%E6%B3%89/"><i
+                    class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://line.me/ti/p/1z3tc-4EiI"><i class="fa-brands fa-line fa-2x"></i></a>
+        </div>
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li><a href="./01主頁.html">首頁</a></li>
+                    <li><a href="./02關於我們.html">關於我們</a></li>
+                    <li><a href="./03特色.html">特色</a></li>
+                    <li><a href="./04房型.html">房型</a></li>
+                    <li><a href="./05交通.html">交通</a></li>
+                </ul>
+        </div>
+        </nav>
+        <div class="footer-info">
+            <p>| 地址：424台灣台中市和平區東關路一段溫泉巷99號 |</p>
+            <p>| 電話：(04)1234-5678 |</p>
+            <p>| 電子郵件：abc9527@example.com |</p>
+            <p>© 2023 天山水溫泉飯店</p>
+        </div>
+    </footer>
+</body>
+
+</html>

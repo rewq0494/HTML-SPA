@@ -1,0 +1,42 @@
+.call {
+  /* 設定內距 */
+  padding: 1.3em 3em;
+
+  font-size: 15px;
+  /* 設定字母轉換為大寫 */
+  text-transform: uppercase;
+  /* 設定字母間距 */
+  letter-spacing: 2.5px;
+  /* 設定字重 */
+  font-weight: 500;
+  /*  */
+  color: #000;
+  background-color: #fff;
+  /* 邊框線樣式 */
+  border: none;
+  /*  設定圓角 */
+  border-radius: 45px;
+  /* 設定陰影 */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  /* 過渡效果 */
+  transition: all 0.3s ease 0s;
+  /* 游標為手指 */
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* 定義按鈕滑鼠移入時的樣式 */
+.call:hover {
+  background-color: #638ae0;
+  box-shadow: 0px 15px 20px rgba(126, 150, 207, 0.4);
+  color: #fff;
+  /* 移動按鈕位置 */
+  transform: translateY(-7px);
+}
+
+/* 按鈕滑鼠 */
+.call:active {
+  /* 按鈕位置 */
+  transform: translateY(-1px);
+}
